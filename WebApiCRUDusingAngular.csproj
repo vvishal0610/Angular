@@ -192,6 +192,9 @@
     <Compile Include="Models\Customer.cs">
       <DependentUpon>AzureModel1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\displayDetails_Result.cs">
+      <DependentUpon>AzureModel1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -206,9 +209,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Usp_Login_Result.cs">
-      <DependentUpon>AzureModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
