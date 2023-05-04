@@ -276,8 +276,7 @@
     <Content Include="Models\AzureModel1.edmx.diagram">
       <DependentUpon>AzureModel1.edmx</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\vm.pubxml" />
-    <None Include="Properties\PublishProfiles\vm1.pubxml" />
+    <None Include="Properties\PublishProfiles\angular-webapi-WebAPI - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="AzureCustomerEntities-Web.config Connection String" description="AzureCustomerEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.AzureModel1.csdl|res://*/Models.AzureModel1.ssdl|res://*/Models.AzureModel1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=angularserver.database.windows.net;initial catalog=Customer;persist security info=True;user id=angular;password=Qwerty@123456;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+  <parameter name="AzureCustomerEntities-Web.config Connection String" description="AzureCustomerEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.AzureModel1.csdl|res://*/Models.AzureModel1.ssdl|res://*/Models.AzureModel1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=customerdbservercrud.database.windows.net;initial catalog=Customer;user id=angularadmin;password=Qwerty@123456;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="F:\\CRUD\ using\ Angular\\WebApiCRUDusingAngular\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AzureCustomerEntities']/@connectionString" />
   </parameter>
 </parameters>

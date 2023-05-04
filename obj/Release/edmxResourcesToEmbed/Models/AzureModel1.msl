@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="AzureCustomerModelStoreContainer" CdmEntityContainer="AzureCustomerEntities">
+  <EntityContainerMapping StorageEntityContainer="CustomerModel1StoreContainer" CdmEntityContainer="AzureCustomerEntities">
     <EntitySetMapping Name="Customers">
-      <EntityTypeMapping TypeName="AzureCustomerModel.Customer">
+      <EntityTypeMapping TypeName="CustomerModel1.Customer">
         <MappingFragment StoreEntitySet="Customer">
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
@@ -14,17 +14,19 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="Usp_Login" FunctionName="AzureCustomerModel.Store.Usp_Login">
+    <FunctionImportMapping FunctionImportName="displayDetails" FunctionName="CustomerModel1.Store.displayDetails">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="AzureCustomerModel.Usp_Login_Result">
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Role" ColumnName="Role" />
-          <ScalarProperty Name="IsApporved" ColumnName="IsApporved" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
+        <ComplexTypeMapping TypeName="CustomerModel1.displayDetails_Result">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Usp_Login" FunctionName="CustomerModel1.Store.Usp_Login" />
   </EntityContainerMapping>
 </Mapping>
